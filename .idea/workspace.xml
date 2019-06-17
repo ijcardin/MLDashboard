@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ddd2598-1654-4e5e-b6a4-80777b3305fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,13 +41,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="html" value="148" />
+          <entry key="html" value="300" />
+          <entry key="js" value="1" />
           <entry key="py" value="264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="148" />
+          <entry key="HTML" value="300" />
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="264" />
         </counts>
@@ -75,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="100">
+              <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="51">
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -173,15 +173,6 @@
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MLDashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -293,13 +284,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" sideWeight="0.49920633" weight="0.3276923" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3276923" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50079364" side_tool="true" weight="0.3276923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -355,16 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/d3.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -387,17 +368,27 @@
         <state relative-caret-position="-255" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="51">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="100">
+          <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />

@@ -61,7 +61,16 @@
 <div style="text-align:center;">
     <svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
 </div>
-<!--<script src="uStates.js"></script> &lt;!&ndash; creates uStates. &ndash;&gt;-->
+
+<h1>RQ1: Predicting if on-time, delayed, diverted or cancelled</h1>
+
+
+
+
+
+
+
+<!------------------------JAVASCRIPT------------------------>
 {% load static %}
 <script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/uStates.js' %}"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -69,9 +78,8 @@
 
 	function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
 		return "<h4>"+n+"</h4><table>"+
-			"<tr><td>Low</td><td>"+(d.low)+"</td></tr>"+
-			"<tr><td>Average</td><td>"+(d.avg)+"</td></tr>"+
-			"<tr><td>High</td><td>"+(d.high)+"</td></tr>"+
+            "<tr><td>On Time</td><td>"+(d.on_time)+"</td></tr>"+
+			"<tr><td>Delayed</td><td>"+(d.delayed)+"</td></tr>"+
 			"</table>";
 	}
 
@@ -85,8 +93,8 @@
 			var low=Math.round(100*Math.random()),
 				mid=Math.round(100*Math.random()),
 				high=Math.round(100*Math.random());
-			sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]),
-					avg:Math.round((low+mid+high)/3), color:d3.interpolate("#ffffcc", "#800026")(low/100)};
+			sampleData[d]={delayed:d3.min([low,mid,high]), on_time:d3.max([low,mid,high]),
+					color:d3.interpolate("#ffffcc", "#800026")(low/100)};
 		});
 
 	/* draw states on id #statesvg */
