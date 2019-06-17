@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ddd2598-1654-4e5e-b6a4-80777b3305fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/RQ3Code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2004.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2004.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2005.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2005.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2006.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2006.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2007.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2007.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2008.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2008.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2009.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2009.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2010.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2010.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2011.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2011.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2012.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2012.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/RQ2Code.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/RQ2Code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,24 +26,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="4" />
-          <entry key="py" value="5" />
+          <entry key="csv" value="6" />
+          <entry key="html" value="1" />
+          <entry key="js" value="2" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="5" />
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
+          <entry key="html" value="148" />
           <entry key="py" value="264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="148" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="264" />
         </counts>
@@ -69,43 +66,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ1Code.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ2Code.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ3Code.py">
+        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="147" column="48" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
+            <state relative-caret-position="238">
+              <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
@@ -116,6 +100,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -128,6 +113,11 @@
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/MLModels.py" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/RQ2Code.py" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/RQ3Code.py" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/d3.min.js" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/cities-lived.csv" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/stateslived.csv" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" />
       </list>
     </option>
   </component>
@@ -142,6 +132,9 @@
     <option name="y" value="-9" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -171,15 +164,31 @@
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MLDashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
               <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-              <item name="RQ3" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MLDashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MLDashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="MLDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,9 +298,9 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" weight="0.3276923" />
+      <window_info anchor="bottom" id="Python Console" sideWeight="0.49920633" weight="0.3276923" />
       <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3276923" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50079364" side_tool="true" weight="0.3276923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3276923" />
@@ -313,23 +322,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2005.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/Data/RQ2/FeaturesLabels2004.csv">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ3Code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2203">
+          <caret line="147" column="48" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ2Code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ1Code.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -338,22 +355,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ2Code.py">
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/RQ3Code.py">
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/d3.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/stateslived.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="147" column="48" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
+        <state relative-caret-position="564">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/cities-lived.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
