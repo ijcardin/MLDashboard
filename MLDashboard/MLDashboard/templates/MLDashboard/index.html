@@ -63,9 +63,70 @@
     <svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
 </div>
 
-<h1>RQ1: Predicting if on-time, delayed, diverted or cancelled</h1>
-
-
+<h1>RQ1: Predicting if on-time, delayed, diverted or cancelled using KNN</h1>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#C44D58;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#C44D58;color:#002b36;background-color:#F9CDAD;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#C44D58;color:#fdf6e3;background-color:#FE4365;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-brdm{background-color:#FFA4A0;border-color:inherit;text-align:left;vertical-align:top}
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#C44D58;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#C44D58;color:#002b36;background-color:#F9CDAD;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#C44D58;color:#fdf6e3;background-color:#FE4365;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-efa0{background-color:#FFA4A0;border-color:inherit;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-c3ow">Test set score</th>
+    <th class="tg-c3ow">On Time Precision</th>
+    <th class="tg-c3ow">On Time Recall</th>
+    <th class="tg-c3ow">Delayed precision</th>
+    <th class="tg-c3ow">Delayed Recall</th>
+    <th class="tg-c3ow">Diverted precision</th>
+    <th class="tg-c3ow">Diverted recall</th>
+    <th class="tg-c3ow">Cancelled precision</th>
+    <th class="tg-c3ow">Cancelled Recall</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">K = 655</td>
+    <td class="tg-efa0">78%</td>
+    <td class="tg-c3ow">78%</td>
+    <td class="tg-efa0">100%</td>
+    <td class="tg-c3ow">0%</td>
+    <td class="tg-efa0">0%</td>
+    <td class="tg-c3ow">0%</td>
+    <td class="tg-efa0">0%</td>
+    <td class="tg-c3ow">0%</td>
+    <td class="tg-efa0">0%</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">K = 5</td>
+    <td class="tg-efa0">76%</td>
+    <td class="tg-c3ow">80%</td>
+    <td class="tg-efa0">93%</td>
+    <td class="tg-c3ow">30%</td>
+    <td class="tg-efa0">16%</td>
+    <td class="tg-c3ow">0%</td>
+    <td class="tg-efa0">0%</td>
+    <td class="tg-c3ow">8%</td>
+    <td class="tg-efa0">0%</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">K = 1</td>
+    <td class="tg-efa0">68%</td>
+    <td class="tg-c3ow">80%</td>
+    <td class="tg-efa0">80%</td>
+    <td class="tg-c3ow">27%</td>
+    <td class="tg-efa0">28%</td>
+    <td class="tg-c3ow">0%</td>
+    <td class="tg-efa0">0%</td>
+    <td class="tg-c3ow">3%</td>
+    <td class="tg-efa0">3%</td>
+  </tr>
+</table>
 
 
 
@@ -73,6 +134,7 @@
 
 <!------------------------JAVASCRIPT------------------------>
 {% load static %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/uStates.js' %}"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
