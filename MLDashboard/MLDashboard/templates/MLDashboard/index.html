@@ -81,60 +81,64 @@
 .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
 .tg .tg-efa0{background-color:#FFA4A0;border-color:inherit;text-align:center;vertical-align:top}
 </style>
-<table class="tg">
-  <tr class="yellow">
-    <th class="tg-c3ow"></th>
-    <th class="tg-c3ow">Test set score</th>
-    <th class="tg-c3ow">On Time Precision</th>
-    <th class="tg-c3ow">On Time Recall</th>
-    <th class="tg-c3ow">Delayed precision</th>
-    <th class="tg-c3ow">Delayed Recall</th>
-    <th class="tg-c3ow">Diverted precision</th>
-    <th class="tg-c3ow">Diverted recall</th>
-    <th class="tg-c3ow">Cancelled precision</th>
-    <th class="tg-c3ow">Cancelled Recall</th>
-  </tr>
-  <tr class="k655">
-    <td class="tg-c3ow">K = 655</td>
-    <td class="tg-efa0">78%</td>
-    <td class="tg-c3ow">78%</td>
-    <td class="tg-efa0">100%</td>
-    <td class="tg-c3ow">0%</td>
-    <td class="tg-efa0">0%</td>
-    <td class="tg-c3ow">0%</td>
-    <td class="tg-efa0">0%</td>
-    <td class="tg-c3ow">0%</td>
-    <td class="tg-efa0">0%</td>
-  </tr>
-  <tr class="k5">
-    <td class="tg-c3ow">K = 5</td>
-    <td class="tg-efa0">76%</td>
-    <td class="tg-c3ow">80%</td>
-    <td class="tg-efa0">93%</td>
-    <td class="tg-c3ow">30%</td>
-    <td class="tg-efa0">16%</td>
-    <td class="tg-c3ow">0%</td>
-    <td class="tg-efa0">0%</td>
-    <td class="tg-c3ow">8%</td>
-    <td class="tg-efa0">0%</td>
-  </tr>
-  <tr class="k1">
-    <td class="tg-c3ow">K = 1</td>
-    <td class="tg-efa0">68%</td>
-    <td class="tg-c3ow">80%</td>
-    <td class="tg-efa0">80%</td>
-    <td class="tg-c3ow">27%</td>
-    <td class="tg-efa0">28%</td>
-    <td class="tg-c3ow">0%</td>
-    <td class="tg-efa0">0%</td>
-    <td class="tg-c3ow">3%</td>
-    <td class="tg-efa0">3%</td>
-  </tr>
-</table>
-<button id="showK655">K = 655</button>
-<button id="showK5">K = 5</button>
-<button id="showK1">K = 1</button>
-<button id="showAll">show all</button>
+<div><
+  <table class="tg" align="center">
+    <tr class="yellow">
+      <th class="tg-c3ow"></th>
+      <th class="tg-c3ow">Test set score</th>
+      <th class="tg-c3ow">On Time Precision</th>
+      <th class="tg-c3ow">On Time Recall</th>
+      <th class="tg-c3ow">Delayed precision</th>
+      <th class="tg-c3ow">Delayed Recall</th>
+      <th class="tg-c3ow">Diverted precision</th>
+      <th class="tg-c3ow">Diverted recall</th>
+      <th class="tg-c3ow">Cancelled precision</th>
+      <th class="tg-c3ow">Cancelled Recall</th>
+    </tr>
+    <tr class="k655">
+      <td class="tg-c3ow">K = 655</td>
+      <td class="tg-efa0">78%</td>
+      <td class="tg-c3ow">78%</td>
+      <td class="tg-efa0">100%</td>
+      <td class="tg-c3ow">0%</td>
+      <td class="tg-efa0">0%</td>
+      <td class="tg-c3ow">0%</td>
+      <td class="tg-efa0">0%</td>
+      <td class="tg-c3ow">0%</td>
+      <td class="tg-efa0">0%</td>
+    </tr>
+    <tr class="k5">
+      <td class="tg-c3ow">K = 5</td>
+      <td class="tg-efa0">76%</td>
+      <td class="tg-c3ow">80%</td>
+      <td class="tg-efa0">93%</td>
+      <td class="tg-c3ow">30%</td>
+      <td class="tg-efa0">16%</td>
+      <td class="tg-c3ow">0%</td>
+      <td class="tg-efa0">0%</td>
+      <td class="tg-c3ow">8%</td>
+      <td class="tg-efa0">0%</td>
+    </tr>
+    <tr class="k1">
+      <td class="tg-c3ow">K = 1</td>
+      <td class="tg-efa0">68%</td>
+      <td class="tg-c3ow">80%</td>
+      <td class="tg-efa0">80%</td>
+      <td class="tg-c3ow">27%</td>
+      <td class="tg-efa0">28%</td>
+      <td class="tg-c3ow">0%</td>
+      <td class="tg-efa0">0%</td>
+      <td class="tg-c3ow">3%</td>
+      <td class="tg-efa0">3%</td>
+    </tr>
+  </table>
+</div>
+<div style="text-align:center;">
+  <button id="showK655">K = 655</button>
+  <button id="showK5">K = 5</button>
+  <button id="showK1">K = 1</button>
+  <button id="showAll">show all</button>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
 var rows = $('table.tg tr');
