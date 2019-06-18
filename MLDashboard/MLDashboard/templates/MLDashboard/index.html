@@ -4,6 +4,8 @@
 <head>
     <title>Flight Visualization</title>
     {% load static %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'MLDashboard/css/style.css' %}">
     <style>
 	.state{
@@ -54,11 +56,13 @@
 	}
     </style>
 </head>
-<header>
-    <button>test</button>
-</header>
-<body>
 
+<body>
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<div>
+    <button type="button" onclick="myFunction()" class="btn btn-danger">Tom Cruise Mode</button>
+</div>
 <div style="text-align:center;">
     <h1>US State Map</h1>
 </div>
@@ -147,8 +151,17 @@
 <script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/uStates.js' %}"></script>
 <script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/particlemovement.js' %}"></script>
 <script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/particles.js-master/particles.js' %}"></script>
-
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+  function myFunction() {
+  var x = document.getElementById("particles-js");
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+  } else {
+    x.style.visibility = "hidden";
+  }
+}
+</script>
 <script>
 
 	function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */

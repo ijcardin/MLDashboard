@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ddd2598-1654-4e5e-b6a4-80777b3305fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,16 +46,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="33" />
           <entry key="dummy" value="7" />
-          <entry key="html" value="632" />
-          <entry key="js" value="1" />
+          <entry key="html" value="717" />
+          <entry key="js" value="3" />
           <entry key="py" value="264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="632" />
-          <entry key="JavaScript" value="1" />
+          <entry key="CSS" value="33" />
+          <entry key="HTML" value="717" />
+          <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="264" />
         </counts>
@@ -81,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="221">
+              <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
@@ -95,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="272">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -104,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            <state relative-caret-position="-272">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -399,6 +401,13 @@
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -406,24 +415,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="272">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="221">
+          <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
