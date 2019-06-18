@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <head>
     <title>Flight Visualization</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'MLDashboard/css/style.css' %}">
     <style>
 	.state{
 		fill: none;
@@ -52,8 +54,11 @@
 	}
     </style>
 </head>
-
+<header>
+    <button>test</button>
+</header>
 <body>
+
 <div style="text-align:center;">
     <h1>US State Map</h1>
 </div>
@@ -134,12 +139,15 @@
 
 
 
-
-
 <!------------------------JAVASCRIPT------------------------>
-{% load static %}
+<!--{% load static %}-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/uStates.js' %}"></script>
+<script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/particlemovement.js' %}"></script>
+<script language="JavaScript" type="text/javascript" src="{% static 'MLDashboard/js/particles.js-master/particles.js' %}"></script>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
