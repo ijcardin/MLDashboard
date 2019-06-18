@@ -83,17 +83,35 @@
 			"</table>";
 	}
 
-	var sampleData ={};	/* Sample random data. */
+	var delayedFlights = {"CA":1481368,"TX":1347214,"FL":890269,"GA":845784,"IL":767143,"NY":578606,"CO":504923,"AZ":382432,
+        "NC": 382304,"VA":364587,"NV":323175,"MI":302747,"NJ":275892,"PA":265595,"TN":255339,"MO":237320,"UT":224066,"MN":222319,
+        "WA":218364,"MA":213503,"OH":210939,"HI":194934,"MD":194214,"KY":144254,"WI":133706,"OR":131203,"LA":125486,"OK":93470,
+        "IN":92707,"AL":82298,"SC":75161,"NM":73589,"AK":70901,"AR":69646,"NE":55996,"PR":54083,"CT":48417,"IA":44522,"ID":41288,
+        "MS":38702,"RI":34752, "MT":32023, "NH":26912,"KS":26848,"SD":20691,"ND":20250,"WY":18596,"ME":15722,"VT":10921,"VI":8161,
+        "WV":7745,"TT":507}
+
+    var onTimeFlights = {"MT": 57361, "MD": 316550, "LA": 191049, "TT": 244, "NE": 75137, "KS": 37291, "IL": 1296687, "VI": 10323,
+        "UT": 410360, "AZ": 684302, "GA": 1244136, "TX": 2132174, "WI": 200082, "VA": 585616, "HI": 341667, "CO": 836973,
+        "NJ": 308463, "NY": 830228, "TN": 422434, "IA": 63610, "OR": 209198, "WY": 31192, "KY": 234488, "NM": 110398, "RI": 54499,
+        "WA": 367744, "FL": 1342128, "AK": 120403, "MA": 328252, "PA": 411780, "MO": 351567, "IN": 145258, "WV": 12496, "NH": 39875,
+        "SC": 104201, "AR": 93395, "MS": 56258, "CT": 70058, "OK": 120943, "SD": 32097, "AL": 125601, "VT": 15982, "CA": 2239299,
+        "NV": 541640, "OH": 319761, "NC": 603608, "PR": 67754, "MI": 496879, "MN": 381909, "ND": 33817, "ID": 69907, "ME": 23479}
+
+	var sampleData ={};	/* Sample data. */
 	["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
 	"ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH",
 	"MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT",
 	"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN",
 	"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
 		.forEach(function(d){
-			var low=Math.round(100*Math.random()),
-				mid=Math.round(100*Math.random()),
-				high=Math.round(100*Math.random());
-			sampleData[d]={delayed:d3.min([low,mid,high]), on_time:d3.max([low,mid,high]),
+			var low=Math.round(100*Math.random());
+			if(d in delayedFlights) {
+                delayed = delayedFlights[d]
+            }
+            if(d in onTimeFlights){
+                on_time = onTimeFlights[d]
+            }
+			sampleData[d]={on_time, delayed,
 					color:d3.interpolate("#ffffcc", "#800026")(low/100)};
 		});
 
