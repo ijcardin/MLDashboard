@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ddd2598-1654-4e5e-b6a4-80777b3305fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +49,7 @@
         <counts>
           <entry key="css" value="50" />
           <entry key="dummy" value="7" />
-          <entry key="html" value="1346" />
+          <entry key="html" value="1715" />
           <entry key="js" value="10" />
           <entry key="py" value="278" />
         </counts>
@@ -61,7 +57,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="50" />
-          <entry key="HTML" value="1346" />
+          <entry key="HTML" value="1715" />
           <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="278" />
@@ -71,15 +67,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="112" column="42" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
+            <state relative-caret-position="338">
+              <caret line="206" column="30" selection-start-line="206" selection-start-column="30" selection-end-line="206" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#8;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#8;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#9;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#10;n#body#0;n#!!top" expanded="true" />
@@ -87,62 +84,11 @@
                 <element signature="n#style#0;n#div#12;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#13;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#10;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#16;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#11;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#18;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#19;n#body#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="224" column="41" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="26" column="105" selection-start-line="26" selection-start-column="105" selection-end-line="26" selection-end-column="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="48" selection-end-line="229" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="68" column="19" lean-forward="true" selection-end-line="229" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -196,8 +142,8 @@
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/bargraph2.html" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph2.html" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py" />
-        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph3.html" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" />
       </list>
     </option>
   </component>
@@ -544,14 +490,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="217" column="11" selection-start-line="217" selection-start-column="11" selection-end-line="217" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="112" column="42" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
+        <state relative-caret-position="338">
+          <caret line="206" column="30" selection-start-line="206" selection-start-column="30" selection-end-line="206" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#8;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#9;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#body#0;n#!!top" expanded="true" />
@@ -559,15 +513,11 @@
             <element signature="n#style#0;n#div#12;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#13;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#16;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#11;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#18;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#19;n#body#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="224" column="41" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
         </state>
       </provider>
     </entry>

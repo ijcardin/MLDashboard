@@ -93,6 +93,11 @@
   <button class="btn btn-primary btn-sm" id="showK1">K = 1</button>
   <button class="btn btn-primary btn-sm" id="showAll">show all</button>
 </div>
+<div style="text-align:center;">
+<h2>As you can see from the values above, Flight delays and cancellations could not be predicted
+      with any serious degree of success :(
+</h2>
+</div>
 <hr>
 <div style="text-align:center;">
   <h1>RQ2: Predicting Delay Type </h1>
@@ -116,9 +121,9 @@
 <div style="text-align:center;">
     <h1>RQ3: Predicting Delay Length</h1>
 </div>
-
-<img src="{% static 'MLDashboard/pic1.png' %}">
-<img src="{% static 'MLDashboard/pic2.png' %}">
+<div style="text-align:center;">
+  <img src="{% static 'MLDashboard/pic2.png' %}">
+</div>
 <div style="text-align:center;">
 <h2>OLS Regression Results</h2>
 <style type="text/css">
@@ -150,12 +155,12 @@
   <tr>
     <td class="tg-0lax">ARR_DELAY</td>
     <td class="tg-md4w">0.091</td>
-    <td class="tg-s268">0.091</td>
-    <td class="tg-md4w">201.3</td>
+    <td class="tg-s268">0.090</td>
+    <td class="tg-md4w">199.8</td>
     <td class="tg-s268">0.00</td>
-    <td class="tg-md4w">-1.5139e+06</td>
+    <td class="tg-md4w">-1.514e+06</td>
     <td class="tg-s268">3.028e+06</td>
-    <td class="tg-md4w">3.030e+06</td>
+    <td class="tg-md4w">3.039e+06</td>
   </tr>
 </table>
 </div>
@@ -185,6 +190,25 @@ $('#showAll').click(function() {
     rows.show();
 });
 </script>
+<h2></h2>
+<div style="text-align: center">
+  <h3>Since the R-Square Value was low, a residual plot was created. <br>
+    As you can see the residuals are spread out quite randomly which tells us it supports a linear model
+  </h3>
+</div>
+<h2></h2>
+<div style="text-align: center">
+  <h3>
+    It was discovered that for
+flights out of Houston, the elements with the most favourable
+effects on delay were the security delay type, Pensacola
+Florida airport, and Texas respectively. The least favourable
+effect was made by the weather delay type, Anchorage Alaska
+airport, and Hawaii state.<br> Airline used had an equal effect on
+delay length.
+  </h3>
+</div>
+<hr>
 
 <!------------------------JAVASCRIPT------------------------>
 <!--{% load static %}-->
