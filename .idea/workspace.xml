@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ddd2598-1654-4e5e-b6a4-80777b3305fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,46 +19,47 @@
     <session id="1404023256">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
+          <entry key="css" value="7" />
           <entry key="csv" value="6" />
           <entry key="html" value="2" />
-          <entry key="js" value="4" />
+          <entry key="js" value="6" />
           <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
+          <entry key="CSS" value="7" />
           <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="4" />
+          <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="36" />
+          <entry key="css" value="50" />
           <entry key="dummy" value="7" />
           <entry key="html" value="1211" />
-          <entry key="js" value="4" />
+          <entry key="js" value="10" />
           <entry key="py" value="268" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="36" />
+          <entry key="CSS" value="50" />
           <entry key="HTML" value="1211" />
-          <entry key="JavaScript" value="4" />
+          <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="268" />
         </counts>
@@ -66,18 +68,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="99" selection-start-line="99" selection-end-line="101" selection-end-column="6" />
+            <state relative-caret-position="442">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#8;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#9;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#10;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#11;n#body#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -85,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
+            <state relative-caret-position="253">
               <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
             </state>
           </provider>
@@ -94,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="255">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -135,13 +148,13 @@
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/cities-lived.csv" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/stateslived.csv" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js" />
-        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/map.css" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/barchart.css" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html" />
-        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" />
       </list>
     </option>
   </component>
@@ -347,7 +360,7 @@
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26587301" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -361,7 +374,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50079364" side_tool="true" weight="0.3276923" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3276923" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49920633" weight="0.3276923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -412,13 +425,6 @@
         <state relative-caret-position="-255" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -433,17 +439,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css">
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/barchart.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="253">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -454,31 +453,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html">
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/barchart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
+        <state relative-caret-position="1054">
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particles.js-master/particles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="255">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="99" selection-start-line="99" selection-end-line="101" selection-end-column="6" />
+        <state relative-caret-position="442">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#8;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#9;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#11;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
