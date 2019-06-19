@@ -1,0 +1,6 @@
+Delay_Type,Type,Generation,Attack,Defense,Speed,HP
+Carrier Delay,Grass,I,49,49,45,45
+Weather Delay,Fire,I,52,43,65,39
+NAS Delay,Water,I,48,65,43,44
+Security Delay,Ground,I,55,25,95,10
+Late Aircraft Delay,Grass,I,75,35,40,50

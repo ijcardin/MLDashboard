@@ -7,11 +7,10 @@
 
 </head>
 <body>
-<h1>Pokeman Stats by Type and Generation</h1>
+<h1>Model One vs Rest Logistical Regression Multilabel</h1>
 
 <div>
   <span id="tooltip2" class="hidden">
-    <p><strong>So strong!</strong></p>
     <p><span id="value">100</span></p>
   </span>
 </div>
@@ -68,7 +67,7 @@ var svg = d3.select("div").append("svg")
 var sortedXvalues = {};
 
 // We load our data
-d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
+d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
   if (error) throw error;
   data.sort(function(a,b) {
     return d3.ascending(a.Type, b.Type); //<-- By default we sort by Type
@@ -76,7 +75,7 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
 
 // Types out Red, Blue, Green, and Average data from each Object
   var Stats_names = d3.keys(data[0])
-    .filter(function(key) { return key != "Pokemon" && key != "Type" && key != "Generation" });
+    .filter(function(key) { return key != "Delay_Type" && key != "Type" && key != "Generation" });
 
   console.log(Stats_names);
 // Adds to our CSV the RGB value where name is equal to name and the value is the color's value
@@ -84,7 +83,7 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
     d.Stats = Stats_names.map(function(name) { return {name: name, value: +d[name]}; });
   });
 
-  x0.domain(data.map(function(d) { return d.Pokemon; }));
+  x0.domain(data.map(function(d) { return d.Delay_Type; }));
   x1.domain(Stats_names).rangeRoundBands([0, x0.rangeBand()]);
   y.domain([0, d3.max(data, function(d) { return d3.max(d.Stats, function(d) { return d.value; }); })]);
 
@@ -93,15 +92,15 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
     .rollup(function(v) { return v.length; })
     .entries(data);
 
-  var pokemon = svg.selectAll(".pokemon")
+  var Delay_Type = svg.selectAll(".Delay_Type")
     .data(data);
 
-  pokemon.enter()
+  Delay_Type.enter()
     .append("g")
-    .attr("class", "pokemon")
-    .attr("transform", function(d) { return "translate(" + x0(d.Pokemon) + ",0)"; });
+    .attr("class", "Delay_Type")
+    .attr("transform", function(d) { return "translate(" + x0(d.Delay_Type) + ",0)"; });
 
-  var columnBars = pokemon.selectAll("rect")
+  var columnBars = Delay_Type.selectAll("rect")
     .data(function(d) { return d.Stats; });
 
   var sortSelection = svg.selectAll(".type")
@@ -112,7 +111,7 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
   sortSelection.enter().append("text")
     .attr("class", "type")
     .attr("text-anchor", "middle")
-    .attr("transform", function(d) { return "translate(" + (x0(d.Pokemon) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
+    .attr("transform", function(d) { return "translate(" + (x0(d.Delay_Type) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
     .text(function(d) {
         if (!!sortedXvalues[d.Type]) {
           sortedXvalues[d.Type]++
@@ -154,7 +153,7 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
     .style("font-size", 12)
     .style("text-transform", "uppercase")
     .style("opacity", .8)
-    .text("Pokemans");
+    .text("Delay Type");
 
 // Labels your y axis and formats it
   svg.append("g")
@@ -179,7 +178,7 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
   d3.selectAll("#sort-by-controls input[name=mode]")
     .on("change", function() {
       var Mode = this.value;
-      d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
+      d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
         if (error) throw error;
         data.sort(function(a,b) {
           console.log('sort', a, b);
@@ -188,9 +187,9 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
         data.forEach(function(d) {
           d.Stats = Stats_names.map(function(name) { return {name: name, value: +d[name]}; });
         });
-        x0.domain(data.map(function(d) { return d.Pokemon; }));
-        pokemon.transition().duration(1000).attr("class", "pokemon")
-          .attr("transform", function(d) { return "translate(" + x0(d.Pokemon) + ",0)"; });
+        x0.domain(data.map(function(d) { return d.Delay_Type; }));
+        Delay_Type.transition().duration(1000).attr("class", "Delay_Type")
+          .attr("transform", function(d) { return "translate(" + x0(d.Delay_Type) + ",0)"; });
         svg.selectAll(".x").filter(".axis")
           .transition().duration(1000)
           .attr("transform", "translate(0," + height + ")")
@@ -199,7 +198,7 @@ d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
         sortSelection.transition().duration(1000)
           .attr("class", "type")
           .attr("text-anchor", "middle")
-          .attr("transform", function(d) { return "translate(" + (x0(d.Pokemon) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
+          .attr("transform", function(d) { return "translate(" + (x0(d.Delay_Type) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
           .text(function(d) {
               if (!!sortedXvalues[d[Mode]]) {
                 sortedXvalues[d[Mode]]++
