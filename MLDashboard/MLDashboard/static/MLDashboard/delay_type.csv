@@ -1,6 +1,6 @@
-Delay_Type,Type,Generation,Attack,Defense,Speed,HP
-Carrier Delay,Grass,I,49,49,45,45
-Weather Delay,Fire,I,52,43,65,39
-NAS Delay,Water,I,48,65,43,44
-Security Delay,Ground,I,55,25,95,10
-Late Aircraft Delay,Grass,I,75,35,40,50
+Delay_Type,Accuracy_Rank,Alphabetical,Precision Weighted Average,Recall Weighted Average,f1-score Weighted Average,Accuracy
+Carrier Delay,5,1,0.58,0.58,0.58,0.58
+Weather Delay,2,5,0.77,0.88,0.82,0.88
+NAS Delay,4,3,0.63,0.66,0.59,0.66
+Security Delay,1,4,0.96,0.98,0.97,0.98
+Late Aircraft Delay,3,2,0.66,0.69,0.63,0.69

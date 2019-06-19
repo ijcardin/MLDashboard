@@ -70,12 +70,12 @@ var sortedXvalues = {};
 d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
   if (error) throw error;
   data.sort(function(a,b) {
-    return d3.ascending(a.Type, b.Type); //<-- By default we sort by Type
+    return d3.ascending(a.Accuracy_Rank, b.Accuracy_Rank); //<-- By default we sort by Type
   });
 
 // Types out Red, Blue, Green, and Average data from each Object
   var Stats_names = d3.keys(data[0])
-    .filter(function(key) { return key != "Delay_Type" && key != "Type" && key != "Generation" });
+    .filter(function(key) { return key != "Delay_Type" && key != "Accuracy_Rank" && key != "Alphabetical" });
 
   console.log(Stats_names);
 // Adds to our CSV the RGB value where name is equal to name and the value is the color's value
@@ -88,7 +88,7 @@ d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
   y.domain([0, d3.max(data, function(d) { return d3.max(d.Stats, function(d) { return d.value; }); })]);
 
   var TypeCount = d3.nest()
-    .key(function(d) { return d.Type; })
+    .key(function(d) { return d.Accuracy_Rank; })
     .rollup(function(v) { return v.length; })
     .entries(data);
 
@@ -109,16 +109,16 @@ d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
 //Type name either Generation or Type type
 
   sortSelection.enter().append("text")
-    .attr("class", "type")
+    .attr("class", "Accuracy_Rank")
     .attr("text-anchor", "middle")
     .attr("transform", function(d) { return "translate(" + (x0(d.Delay_Type) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
     .text(function(d) {
-        if (!!sortedXvalues[d.Type]) {
-          sortedXvalues[d.Type]++
+        if (!!sortedXvalues[d.Accuracy_Rank]) {
+          sortedXvalues[d.Accuracy_Rank]++
         }
         else {
-          sortedXvalues[d.Type] = 1;
-          return d.Type;
+          sortedXvalues[d.Accuracy_Rank] = 1;
+          return d.Accuracy_Rank;
         }
     });
 
@@ -159,7 +159,7 @@ d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
   svg.append("g")
     .attr("class", "y axis")
     .call(yAxisLeft)
-    .append("text")
+    // .append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 6)
     .attr("dy", "-5em")
@@ -168,12 +168,12 @@ d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
     .style("font-size", 12)
     .style("text-transform", "uppercase")
     .style("opacity", .8)
-    .text("Points");
+    .text("Percentage");
 
   svg.append("g")
     .attr("class", "y axis")
     .attr("transform", "translate(" + width + " ,0)")
-    .call(yAxisRight);
+    // .call(yAxisRight);
 
   d3.selectAll("#sort-by-controls input[name=mode]")
     .on("change", function() {
@@ -196,7 +196,7 @@ d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
           .call(xAxis);
 
         sortSelection.transition().duration(1000)
-          .attr("class", "type")
+          .attr("class", "Accuracy_Rank")
           .attr("text-anchor", "middle")
           .attr("transform", function(d) { return "translate(" + (x0(d.Delay_Type) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
           .text(function(d) {
@@ -222,8 +222,8 @@ d3.csv("{% static 'MLDashboard/delay_type.csv' %}", function(error, data) {
 
 <h4>Sort by:</h4>
 <div id="sort-by-controls">
-  <input type="radio" name="mode" value="Type" id="Type" checked><label for="`clickedType`"> Type</label>
-  <input type="radio" name="mode" value="Generation" id="Generation"><label for="clickedGeneration"> Generation</label>
+  <input type="radio" name="mode" value="Accuracy_Rank" id="Accuracy_Rank" checked><label for="`clickedType`"> Accuracy</label>
+  <input type="radio" name="mode" value="Alphabetical" id="Alphabetical"><label for="clickedGeneration"> Alphabetical</label>
 </div>
 
 </body>

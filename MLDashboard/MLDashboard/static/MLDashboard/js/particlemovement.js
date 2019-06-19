@@ -8,7 +8,7 @@ particlesJS("particles-js", {
       polygon: { nb_sides: 6 },
       image: {
         src:
-          "https://img1.looper.com/img/gallery/top-gun-maverick-begins-filming-tom-cruise-confirms/intro-1527772052.jpg",
+          "https://i.imgur.com/15NWgNG.png",
         width: 100,
         height: 100
       }

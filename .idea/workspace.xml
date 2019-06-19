@@ -33,7 +33,7 @@
           <entry key="css" value="3" />
           <entry key="csv" value="6" />
           <entry key="html" value="2" />
-          <entry key="js" value="3" />
+          <entry key="js" value="4" />
           <entry key="py" value="7" />
         </counts>
       </usages-collector>
@@ -41,7 +41,7 @@
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Python" value="7" />
         </counts>
@@ -50,16 +50,16 @@
         <counts>
           <entry key="css" value="36" />
           <entry key="dummy" value="7" />
-          <entry key="html" value="977" />
-          <entry key="js" value="3" />
+          <entry key="html" value="1208" />
+          <entry key="js" value="4" />
           <entry key="py" value="268" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="36" />
-          <entry key="HTML" value="977" />
-          <entry key="JavaScript" value="3" />
+          <entry key="HTML" value="1208" />
+          <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="268" />
         </counts>
@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
+            <state relative-caret-position="153">
+              <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#body#0;n#!!top" expanded="true" />
@@ -84,11 +84,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+            <state relative-caret-position="190">
+              <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -107,6 +116,12 @@
     <findStrings>
       <find>Pokemon</find>
       <find>pokemans</find>
+      <find>points</find>
+      <find>point</find>
+      <find>yaxisleft</find>
+      <find>yaxisright</find>
+      <find>Type</find>
+      <find>Generation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,13 +137,13 @@
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/cities-lived.csv" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/mapData/stateslived.csv" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/uStates.js" />
-        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/style.css" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/map.css" />
-        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/css/barchart.css" />
         <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html" />
+        <option value="$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js" />
       </list>
     </option>
   </component>
@@ -334,11 +349,11 @@
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3276923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -406,13 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -454,10 +462,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
+        <state relative-caret-position="153">
+          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#body#0;n#!!top" expanded="true" />
@@ -468,10 +483,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/templates/MLDashboard/barGraph.html">
+    <entry file="file://$PROJECT_DIR$/MLDashboard/MLDashboard/static/MLDashboard/js/particlemovement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+        <state relative-caret-position="153">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>
