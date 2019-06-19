@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'MLDashboard/css/barchart.css' %}">
+
+</head>
+<body>
+<h1>Pokeman Stats by Type and Generation</h1>
+
+<div>
+  <span id="tooltip2" class="hidden">
+    <p><strong>So strong!</strong></p>
+    <p><span id="value">100</span></p>
+  </span>
+</div>
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+// Setting up your vars for defining the boundaries of this chart + margins
+var margin = {top: 20, right: 40, bottom: 80, left: 80},
+  width = 1000 - margin.left - margin.right,
+  height = 380 - margin.top - margin.bottom;
+
+// X axis scale is defined by the length of the array divided by the width of the chart
+// second parametere (.2) defines distance between
+var x0 = d3.scale.ordinal()
+  .rangeRoundBands([0, width], .2);
+
+var x1 = d3.scale.ordinal();
+
+// Y axis scale is defined by a linear scale, max being the height of the chart.
+var y = d3.scale.linear()
+  .range([height, 0]);
+
+var color = d3.scale.ordinal()
+  .range(["#e74c3c", "#2ecc71", "#f1c40f", "#3498db"]); //<-- Red, Green, Yellow, Blue
+
+var xAxis = d3.svg.axis()
+  .scale(x0)
+  .tickSize(10,0)
+  .orient("bottom");
+
+// additional features, like its alignment and tickFormat
+var yAxisLeft = d3.svg.axis()
+  .scale(y)
+  .orient("left")
+  .tickSize(7,0)
+  .tickFormat(d3.format(".2s"));
+
+// Another Y Axis for Mr. Simmon
+var yAxisRight = d3.svg.axis()
+  .scale(y)
+  .orient("right")
+  .tickSize(7,0)
+  .tickFormat(d3.format(".2s"));
+
+//  This is defining a var (svg) that will draw our div at this current box
+var svg = d3.select("div").append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .attr("class", "chart")
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var sortedXvalues = {};
+
+// We load our data
+d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
+  if (error) throw error;
+  data.sort(function(a,b) {
+    return d3.ascending(a.Type, b.Type); //<-- By default we sort by Type
+  });
+
+// Types out Red, Blue, Green, and Average data from each Object
+  var Stats_names = d3.keys(data[0])
+    .filter(function(key) { return key != "Pokemon" && key != "Type" && key != "Generation" });
+
+  console.log(Stats_names);
+// Adds to our CSV the RGB value where name is equal to name and the value is the color's value
+  data.forEach(function(d) {
+    d.Stats = Stats_names.map(function(name) { return {name: name, value: +d[name]}; });
+  });
+
+  x0.domain(data.map(function(d) { return d.Pokemon; }));
+  x1.domain(Stats_names).rangeRoundBands([0, x0.rangeBand()]);
+  y.domain([0, d3.max(data, function(d) { return d3.max(d.Stats, function(d) { return d.value; }); })]);
+
+  var TypeCount = d3.nest()
+    .key(function(d) { return d.Type; })
+    .rollup(function(v) { return v.length; })
+    .entries(data);
+
+  var pokemon = svg.selectAll(".pokemon")
+    .data(data);
+
+  pokemon.enter()
+    .append("g")
+    .attr("class", "pokemon")
+    .attr("transform", function(d) { return "translate(" + x0(d.Pokemon) + ",0)"; });
+
+  var columnBars = pokemon.selectAll("rect")
+    .data(function(d) { return d.Stats; });
+
+  var sortSelection = svg.selectAll(".type")
+    .data(data);
+
+//Type name either Generation or Type type
+
+  sortSelection.enter().append("text")
+    .attr("class", "type")
+    .attr("text-anchor", "middle")
+    .attr("transform", function(d) { return "translate(" + (x0(d.Pokemon) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
+    .text(function(d) {
+        if (!!sortedXvalues[d.Type]) {
+          sortedXvalues[d.Type]++
+        }
+        else {
+          sortedXvalues[d.Type] = 1;
+          return d.Type;
+        }
+    });
+
+//Draws a rectangle
+  columnBars.enter().append("rect")
+    .attr("width", x1.rangeBand())
+    .attr("x", function(d) { return x1(d.name); })
+    .attr("y", function(d) { return y(d.value); })
+    .attr("height", function(d) { return height - y(d.value); })
+    .style("fill", function(d) { return color(d.name); })
+    .on("mouseover", function(d) {
+      d3.select("#tooltip2")
+        .style("left", width - 50 + "px")
+        .style("top", "50px")
+        .select("#value")
+        .text(d.name + ' = ' + d.value);
+      //Show the tooltip
+      d3.select("#tooltip2").classed("hidden", false);
+    })
+    .on("mouseout", function() {
+    //Hide the tooltip
+      d3.select("#tooltip2").classed("hidden", true);
+    });
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis)
+    .append("text")
+    .attr("y", 60)
+    .attr("x", (width/2) -40)
+    .style("font-size", 12)
+    .style("text-transform", "uppercase")
+    .style("opacity", .8)
+    .text("Pokemans");
+
+// Labels your y axis and formats it
+  svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxisLeft)
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 6)
+    .attr("dy", "-5em")
+    .attr("x", 30-height/2)
+    .style("text-anchor", "end")
+    .style("font-size", 12)
+    .style("text-transform", "uppercase")
+    .style("opacity", .8)
+    .text("Points");
+
+  svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(" + width + " ,0)")
+    .call(yAxisRight);
+
+  d3.selectAll("#sort-by-controls input[name=mode]")
+    .on("change", function() {
+      var Mode = this.value;
+      d3.csv("{% static 'MLDashboard/pokemans.csv' %}", function(error, data) {
+        if (error) throw error;
+        data.sort(function(a,b) {
+          console.log('sort', a, b);
+          return d3.ascending(a[Mode], b[Mode]);
+        });
+        data.forEach(function(d) {
+          d.Stats = Stats_names.map(function(name) { return {name: name, value: +d[name]}; });
+        });
+        x0.domain(data.map(function(d) { return d.Pokemon; }));
+        pokemon.transition().duration(1000).attr("class", "pokemon")
+          .attr("transform", function(d) { return "translate(" + x0(d.Pokemon) + ",0)"; });
+        svg.selectAll(".x").filter(".axis")
+          .transition().duration(1000)
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis);
+
+        sortSelection.transition().duration(1000)
+          .attr("class", "type")
+          .attr("text-anchor", "middle")
+          .attr("transform", function(d) { return "translate(" + (x0(d.Pokemon) + margin.right) + "," + (height + margin.bottom/1.9) + ")"; })
+          .text(function(d) {
+              if (!!sortedXvalues[d[Mode]]) {
+                sortedXvalues[d[Mode]]++
+              }
+              else {
+                sortedXvalues[d[Mode]] = 1;
+                return d[Mode];
+              }
+          });
+
+        columnBars.transition().duration(1000)
+          .attr("width", x1.rangeBand())
+          .attr("x", function(d) { return x1(d.name); })
+          .attr("y", function(d) { return y(d.value); })
+          .attr("height", function(d) { return height - y(d.value); })
+          .style("fill", function(d) { return color(d.name); });
+        });
+    });
+});
+</script>
+
+<h4>Sort by:</h4>
+<div id="sort-by-controls">
+  <input type="radio" name="mode" value="Type" id="Type" checked><label for="`clickedType`"> Type</label>
+  <input type="radio" name="mode" value="Generation" id="Generation"><label for="clickedGeneration"> Generation</label>
+</div>
+
+</body>
+</html>
