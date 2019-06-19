@@ -23,4 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='Flight Home'),
     url(r'^barGraph/', TemplateView.as_view(template_name="MLDashboard/barGraph.html"), name='barGraph'),
+    url(r'^barGraph2/', TemplateView.as_view(template_name="MLDashboard/barGraph2.html"), name='barGraph2'),
+    url(r'^barGraph3/', TemplateView.as_view(template_name="MLDashboard/barGraph3.html"), name='barGraph3'),
 ]

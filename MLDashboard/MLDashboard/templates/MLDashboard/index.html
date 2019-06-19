@@ -17,7 +17,7 @@
     <button type="button" onclick="myFunction()" class="btn btn-danger">Tom Cruise Mode</button>
 </div>
 <div style="text-align:center;">
-    <h1>US State Map</h1>
+    <h1>US State Map <br> Delayed and On Time Flight Counts (2008-2012)</h1>
 </div>
 
 <div id="tooltip"></div><!-- div to hold tooltip. -->
@@ -99,6 +99,18 @@
 </div>
 <div style="text-align:center;">
   <iframe frameborder='0' id="bargraph" width="85%" height="515" src="{% url 'barGraph' %}"></iframe>
+</div>
+<div style="text-align:center;">
+  <iframe frameborder='0' id="bargraph2" width="85%" height="515" src="{% url 'barGraph2' %}"></iframe>
+</div>
+<div style="text-align:center;">
+  <h3>The Accuracy using this model is: 52%</h3>
+</div>
+<div style="text-align:center;">
+  <iframe frameborder='0' id="bargraph3" width="85%" height="515" src="{% url 'barGraph3' %}"></iframe>
+</div>
+<div style="text-align:center;">
+  <h3>The Accuracy using this model is: 50%</h3>
 </div>
 <hr>
 <div style="text-align:center;">
