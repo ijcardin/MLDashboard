@@ -234,6 +234,7 @@ delay length.
 		return "<h4>"+n+"</h4><table>"+
             "<tr><td>On Time</td><td>"+(d.on_time)+"</td></tr>"+
 			"<tr><td>Delayed</td><td>"+(d.delayed)+"</td></tr>"+
+            "<tr><td>Flights with Snakes</td><td>"+(d.low)+"</td></tr>"
 			"</table>";
 	}
 
@@ -265,7 +266,7 @@ delay length.
             if(d in onTimeFlights){
                 on_time = onTimeFlights[d]
             }
-			sampleData[d]={on_time, delayed,
+			sampleData[d]={on_time, delayed, low,
 					color:d3.interpolate("#ffffcc", "#800026")(low/100)};
 		});
 
